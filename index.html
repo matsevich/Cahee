@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Our Services</title>
 </head>
 
 <body>
     <section class="our-services">
-        <div class="our-servicse__wrapper">
+        <div class="our-services__wrapper">
             <div class="list">
                 <ul class="list__box">
-                    <li class="list__item">Online Shopping</li>
-                    <li class="list__item">Quality Product</li>
-                    <li class="list__item">Domestic & International Delivery</li>
-                    <li class="list__item">Well Organized</li>
+                    <li class="list__item">
+                        <div class="text"><span class="list-text">Online Shopping </span></div>
+                        <div class="icon"><img src="img/icon-cart.png" alt="cart"></div>                    
+                    </li>
+                    <li class="list__item">
+                        <div class="text"><span class="list-text">Quality Product</span></div>
+                        <div class="icon"><img src="img/icon-grow.png" alt="agro-grow"></div>
+                    </li>
+                    <li class="list__item">
+                        <div class="text"><span class="list-text">Domestic & International Delivery</span></div>
+                        <div class="icon"><img src="img/icon-net.png" alt="world-net"></div>
+                    </li>
+                    <li class="list__item">
+                        <div class="text"><span class="list-text">Well Organaized</span></div>
+                        <div class="icon"><img src="img/icon-carrot.png" alt="carrot"></div>
+                    </li>
                 </ul>
-                <div class="img"><img src="" alt="" class="tomatos">
+            </div>
+                <div class="img"><img src="img/tomato.png" alt="tomatos" class="tomatos">
                     <div class="title__img">
                         <h1 class="title">Our Services</h1>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
     <section class="gallery">
@@ -36,12 +51,14 @@
             </div>
             <div class="conteiner__img">
                 <div class="img__item"><img src="img/galery-plate.png" alt="peach-plate"></div>
-                <div class="img__item">
+                <div class="img__item2">
                     <div class="smal__img"><img src="img/blueberry.png" alt="blueberry"></div>
-                    <div class="smal__img"><img src="img/blackberry.png" alt="blackberry"></div>
+                    <div class="smal__img2"><img src="img/blackberry.png" alt="blackberry"></div>
                 </div>
-                <div class="img__item"><img src="img/milkberry.png" alt="milkberry"></div>
-                <div class="img__item"><img src="img/fig.png" alt="fig-fruite"></div>
+                <div class="img__box1">
+                    <div class="img__item3"><img src="img/milkberry.png" alt="milkberry"></div>
+                    <div class="img__item4"><img src="img/fig.png" alt="fig-fruite"></div>
+                </div>
             </div>
             <div class="button">
                 <input type="button" value="VIEW MORE"></input>
@@ -54,12 +71,12 @@
                 <h1 class="title">Subscribe To Us</h1>
                 <p class="title__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <form action="#">
+                            <input class="form"  type="email" name="email" placeholder="Your email address..." id=""><input type="button"
+                                value="SUBSCRIBE">
+                    </form>    
             </div>
-            <form action="">
-                <input type="email" name="email" placeholder="Your email address..." id=""><input type="button"
-                    value="SUBSCRIBE">
-            </form>
-            <div class="blueberry-bg"></div>
+            <div class="blueberry-img"><img src="img/bg-blueberry.png" alt="blueberry"></div>
         </div>
     </section>
 </body>

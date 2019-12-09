@@ -1,3 +1,228 @@
-body 
-    background: #fff
-    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+@font-face
+    font-family: Times New Roman
+    src: url(times_new_roman.ttf)
+
+@mixin relawey-bold
+    font-family: 'Raleway',sans-serif
+    font-weight: 700
+@mixin relewey-light
+    font-family: 'Raleway',sans-serif
+    font-weight: 300
+
+@mixin times-new-regular
+    font-family: 'Times New Roman', sans-serif
+    font-weight: 400
+
+.our-services
+    background-color: #70bfff
+    &__wrapper
+        display: flex
+        justify-content: flex-start
+        flex-flow: row wrap-reverse
+        padding:
+        top: 100px
+        bottom: 150px
+
+    .img
+        position: relative
+        display: flex
+        width: 560px
+        margin-left: 8%
+        margin-bottom: 150px
+        margin-top: 100px
+        img
+            margin-left: 50px
+        .title__img
+            position: absolute
+            left: 0
+            top: 150px
+            .title
+                @include relawey-bold
+                font-size: 90px
+                line-height: 100px
+                color: #ffffff
+.list
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 400px
+    height: 460px
+    margin-left: (250 / 1500) * 100%
+    margin-bottom: 150px
+    margin-top: 180px
+    .list__box
+        list-style: none
+        width: 400px
+    &__item
+        background: #fff
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        box-shadow: 1px 1px 4px 2px #44739a
+
+        .text
+            width: 300px
+            height: 100px
+            align-self: center
+
+            .list-text
+                max-width: 240px
+                display: block
+                padding-top: 34px
+                text-align: center
+                @include relawey-bold
+                font-size: 20px
+                line-height: 27px
+                margin: 0 auto
+        &:hover, &:focus
+            box-shadow: 3px 3px 10px 4px #44739a
+            cursor: pointer
+        &:hover .list-text
+            @include times-new-regular
+            font-size: 22px
+            transition: top 2s ease-out 1.5s
+
+        .icon
+            width: 100px
+            height: 100px
+            align-self: center
+            box-shadow: inset 1px 0 0 0 #9d9d9d
+            img
+                padding-top: 25px
+                padding-left: 25px
+
+.gallery
+    background-color: #ffe92f
+    &__wrapper
+        display: flex
+        justify-content: center
+        flex-flow: row wrap
+        width: 100%
+        align-items: flex-start
+
+        .topper__box
+            width: 590px
+            margin: 0 auto
+            text-align: center
+            .title
+                @include relawey-bold
+                font-size: 90px
+                margin: 100px auto 40px auto
+            .title__text
+                @include relewey-light
+                font-size: 17px
+                line-height: 27px
+                margin-bottom: 40px
+        .conteiner__img
+            display: flex
+            justify-content: space-between
+            flex-direction: row
+            flex-wrap: wrap
+            width: 1170px
+            margin: 0 auto
+            .img__item
+                flex-basis: 51%
+                margin: 0 auto
+            .img__item2
+                display: flex
+                justify-content: space-between
+                flex-flow: column wrap
+                flex-basis: 24.5%
+                margin: 0 auto
+                .smal__img, .smal__img2
+                    margin-left: 30px
+            .img__box1
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-between
+                margin: 30px auto 0 auto
+                .img__item3, .img__item4
+                    flex-basis: 36.5%
+                .img__item3
+                    margin-right: 30px
+
+            img
+                box-shadow: 2px 2px 4px 3px  #9e901d
+                &:hover
+                    transform: scale(1.01)
+                    transition: all 1.5s esse-in 2.5s
+                    cursor: pointer
+        .button
+            margin: 50px auto 120px auto
+            position: relative
+            input
+                border: none
+                width: 200px
+                height: 55px
+                background: #5585a2
+                color: #ffffff
+                @include relewey-light
+                cursor: pointer
+                outline: none
+                box-shadow: 2px 2px 4px 3px  #9e901d
+                &:active
+                    transform: scale(0.99)
+                &:hover
+                    box-shadow: 2px 2px 4px 6px  #9e901d
+
+.subscribe
+    background-color: #ffffff
+    &__wrapper
+        display: flex
+        justify-content: center
+        flex-direction: row
+        flex-wrap: wrap
+        width: 100%
+        .title__box
+            position: relative
+            width: 575px
+            height: 220px
+            float: left
+            margin-top: 110px
+            margin-left: auto
+            .title
+                @include relawey-bold
+                font-size: 40px
+                line-height: 27px
+            .title__text
+                @include relewey-light
+                font-size: 17px
+                line-height: 27px
+                width: 545px
+                padding-bottom: 30px
+            .form
+                width: 570px
+                height: 55px
+            input[type="email"]
+                border: 1px solid #000000
+                padding-left: 15px
+                outline: none
+            input[type="button"]
+                position: absolute
+                right: -200px
+                bottom: 0
+                border: none
+                width: 170px
+                height: 55px
+                background: #96b92c
+                color: #ffffff
+                @include relewey-light
+                cursor: pointer
+                box-shadow: 2px 2px 7px 3px  #5c5c5b
+                outline: none
+                &:active, &:focus
+                    border-color: #96b92c
+                &:active
+                    transform: scale(0.99)
+                &:hover
+                    box-shadow: 1px 1px 8px 4px  #ffffff
+
+        .blueberry-img
+            width: 600px
+            height: 500px
+            margin-left: 80px
