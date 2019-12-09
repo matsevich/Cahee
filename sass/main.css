@@ -73,6 +73,10 @@
   box-shadow: 1px 1px 4px 2px #44739a;
 }
 
+.list__item:active {
+  transform: scale(0.99);
+}
+
 .list__item .text {
   width: 300px;
   height: 100px;
@@ -197,6 +201,10 @@
   transform: scale(1.01);
   transition: all 1.5s esse-in 2.5s;
   cursor: pointer;
+}
+
+.gallery__wrapper .conteiner__img img:active {
+  transform: scale(0.99);
 }
 
 .gallery__wrapper .button {
