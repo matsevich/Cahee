@@ -2,6 +2,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    transition: all 0.15s ease-in 0.15s
     input, button
         outline: none 
 @font-face
@@ -18,6 +19,10 @@
 @mixin times-new-regular
     font-family: 'Times New Roman', sans-serif
     font-weight: 400
+@mixin pacifico-cursive 
+    font-family: 'Pacifico', cursive
+    font-weight: 400
+    
 
 .our-services
     background-color: #70bfff
@@ -131,7 +136,7 @@
             margin: 0 auto
             .img__item
                 flex-basis: 51%
-                margin: 0 auto
+                margin: 0 auto            
             .img__item2
                 display: flex
                 justify-content: space-between
@@ -229,9 +234,11 @@
                     box-shadow: 1px 1px 8px 4px  #ffffff
 
         .blueberry-img
-            width: 600px
-            height: 500px
             margin-left: 80px
+            img 
+                width: 100%
+                
+                
 //* Blog styling *//
 
 .blog-conteiner 
@@ -331,6 +338,135 @@
                     line-height: 50px
 
 //* Last page, Contact, styling *//
+.contact
+    background: url(../img/contact-bg.png) no-repeat
+    a, a:link
+        color: #b9b9b9
+        text-decoration: none
+    .header
+        flex-basis: 100%
+        padding: 100px 0 0 0
+        &__topic
+            width: 370px
+            margin: 0 auto
+            text-align: center
+            font-size: 90px
+            @include relawey-bold            
+        &__text
+            width: 370px
+            text-align: center
+            margin: 0 auto
+            padding: 45px 0
+            @include relewey-light            
+            line-height: 25px
+            font-size: 17px
+    &__form
+        position: relative
+        display: flex
+        justify-content: space-around
+        flex-flow: row wrap
+        align-items: flex-start
+        .form__box
+            margin-left: 165px
+            position: relative
+            .btn
+                input 
+                    position: absolute
+                    left: 0
+                    bottom: 50px
+                    border: none
+                    width: 170px
+                    height: 55px
+                    background: #00c4c4
+                    color: #ffffff
+                    @include relewey-light
+                    cursor: pointer
+                    box-shadow: 2px 2px 7px 3px  #5c5c5b
+                    outline: none
+                    &:active, &:focus
+                        border-color: #96b92c
+                    &:active
+                        transform: scale(0.99)
+                    &:hover
+                        box-shadow: 1px 1px 8px 4px  #ffffff
+                
 
+    .form__inputs
+        display: flex
+        flex-flow: column wrap
+        justify-content: flex-start
+        .form__item
+            input
+                width: 500px
+                min-width: 217px
+                height: 50px
+                font-size: 15px
+                font-weight: 400
+                margin-bottom: 15px
+                padding-left: 25px
+                background-color: #00c4c4!important
+                outline: none
+                border: none
+                color: #fff
+                opacity: 0.5
+                &::placeholder
+                    color: #ffffff
+                &:visited            
+                    background-color: #00c4c4
+                    @include relawey-bold                    
+                &:active, &:hover, &:focus
+                    opacity: 1
+                    box-shadow: inset 5px 0 0 0 #355b82
+    &__data
+        flex-basis: 48%
+        flex-shrink: 1
+        padding-left: 170px
+    &__text
+        font-size: 21px
+        line-height: 25px
+        margin: 0 0 13px 0
+    .bottom__end
+        display: flex
+        justify-content: space-around
+        flex-direction: row
+        width: 100%
+        height: 90px
+        background-color: #262626
+        color: #b9b9b9
+        vertical-align: middle
+        @include relewey-light        
+        .main-logo
+            .logo
+                @include pacifico-cursive                
+                font-size: 25px
+                margin-top: 30px
+        .copiright
+            .text
+                font-size: 16px
+                margin-top: 35px
+        .author
+            .text
+                font-size: 15px
+                margin-top: 35px
+                span
+                    font-weight: 700
+                    color: #f12b55
+    .txtplace
+        width: 500px
+        min-width: 217px
+        height: 230px
+        font-size: 15px
+        font-weight: 400
+        background-color: #00c4c4
+        opacity: 0.5
+        margin-bottom: 120px
+        color: #fff
+    textarea
+        padding: 10px 0 0 25px
+        &::placeholder
+            color: #ffffff
+        &:active, &:hover, &:focus
+            opacity: 1
+            box-shadow: inset 5px 0 0 0 #355b82 
 
 
