@@ -15,11 +15,11 @@
 }
 
 .cahee-freshlife {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  background-color: #f9f8fb;
-  width: 100%;
+  background: url(../img/main-bg.png) no-repeat;
 }
 
 .cahee-freshlife .header {
@@ -30,8 +30,8 @@
 }
 
 .cahee-freshlife .header__topper {
-  margin-top: 35px;
-  width: 100%;
+  margin-top: 45px;
+  width: inherit;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -52,8 +52,8 @@
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
   font-size: 16px;
-  margin-right: 35px;
-  margin-left: 28%;
+  margin-right: auto;
+  margin-left: 27%;
   text-decoration: none;
   color: #000;
 }
@@ -95,20 +95,18 @@
 .cahee-freshlife .conteiner__middle {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   flex-flow: row no-wrap;
 }
 
 .cahee-freshlife .conteiner__middle .topic {
   position: relative;
-  flex-basis: 400px;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
   font-family: 'Raleway',sans-serif;
   font-weight: 300;
   margin-left: 160px;
   margin-top: 100px;
+  margin-bottom: 360px;
 }
 
 .cahee-freshlife .conteiner__middle .topic__title {
@@ -142,11 +140,6 @@
   transition: all 0.3s ease;
 }
 
-.cahee-freshlife .conteiner__middle .topic-img {
-  margin-left: 30px;
-  flex-basis: 800px;
-}
-
 .cahee-freshlife .scroll {
   position: relative;
 }
@@ -173,7 +166,7 @@
 }
 
 .cahee-freshlife .bottom {
-  background: url(../img/blue-bg.png) no-repeat;
+  background: url(../img/blue-bg.png);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -445,7 +438,6 @@
   height: 220px;
   float: left;
   margin-top: 110px;
-  margin-left: auto;
 }
 
 .subscribe__wrapper .title__box .title {
@@ -822,4 +814,50 @@
 .contact textarea:active, .contact textarea:hover, .contact textarea:focus {
   opacity: 1;
   box-shadow: inset 5px 0 0 0 #355b82;
+}
+
+@media screen and (max-width: 1199px) {
+  html, body, section, .header__topper {
+    max-width: 100%;
+  }
+  .title__box {
+    margin-left: 0;
+  }
+  html {
+    margin: 0;
+  }
+  .our-services div.img {
+    max-width: 470px;
+  }
+  .our-services .img img {
+    width: 90%;
+  }
+  .our-services .title__img h1.title {
+    font-size: 76px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .blueberry-img img {
+    margin-top: -30px;
+  }
+  .contact .contact__form, .contact .form__box {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cahee-freshlife, html, body {
+    max-width: 100%;
+  }
+  .header__topper {
+    max-width: 960px;
+    flex-flow: row wrap;
+  }
+  .cahee-freshlife .bottom {
+    height: 746px;
+    padding: 0;
+  }
+  .cahee-freshlife .bottom img {
+    max-width: 400px;
+  }
 }

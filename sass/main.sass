@@ -26,19 +26,19 @@
 
 
 .cahee-freshlife
+    width: 100%     
     display: flex
     flex-flow: column wrap
     justify-content: flex-start
-    background-color: #f9f8fb
-    width: 100%
+    background: url(../img/main-bg.png) no-repeat
     .header         
         width: 100%        
         display: flex
         background-color: #fff
         opacity: 0.7
         &__topper
-            margin-top: 35px
-            width: 100%
+            margin-top: 45px
+            width: inherit  
             position: fixed
             display: flex
             justify-content: space-between
@@ -54,8 +54,8 @@
                 @include relawey-bold                
                 font-size: 16px
                 margin:
-                    right: 35px
-                    left: 28% 
+                    right: auto
+                    left: 27% 
                 text-decoration: none
                 color: #000
                 a 
@@ -66,9 +66,6 @@
                     width: 80px
                     text-align: center
                     margin: 0 auto
-                    
-                    
-                      
                     text-transform: uppercase
                     &:link, &:visited
                         color: black
@@ -88,19 +85,17 @@
     .conteiner__middle
         width: 100% 
         display: flex
-        justify-content: center
+        justify-content: flex-start
+        align-items: center
         flex-flow: row no-wrap  
             
         .topic 
             position: relative
-            flex-basis: 400px
-            justify-content: flex-start
-            flex-direction: column
-            flex-wrap: wrap
             @include relewey-light            
             margin:
                 left: 160px
                 top: 100px
+                bottom: 360px   
             &__title 
                 width: 300px
                 font-size: 60px
@@ -124,9 +119,7 @@
                     cursor: pointer
                     transform: scale(1.03)
                     transition: all 0.3s ease
-        .topic-img
-            margin-left: 30px
-            flex-basis: 800px
+
     .scroll
         position: relative
         .bottom__link 
@@ -145,7 +138,7 @@
                     box-shadow: 3px 14px 9px 5px rgba(0, 0, 20, 0.65)
                     border-radius: 17px
     .bottom 
-        background: url(../img/blue-bg.png) no-repeat        
+        background: url(../img/blue-bg.png)        
         display: flex
         flex-flow: row wrap
         justify-content: space-around
@@ -338,7 +331,6 @@
             height: 220px
             float: left
             margin-top: 110px
-            margin-left: auto
             .title
                 @include relawey-bold
                 font-size: 40px
@@ -612,4 +604,4 @@
             opacity: 1
             box-shadow: inset 5px 0 0 0 #355b82 
 
-
+@import media.sass
