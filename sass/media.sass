@@ -5,78 +5,113 @@
         margin-left: 0
     html 
         margin: 0
+    .cahee-freshlife 
+        .header__topper 
+            .nav-menu
+                margin-left: 45px
     .our-services
-        div.img
-            max-width: 470px    
-        .img img
-            width: 90%
-        .title__img 
-            h1.title
-                font-size: 60px 
-                line-height: 60px
-                text-align: center
-    .header__topper 
-        .nav-menu
+        &__conteiner
             margin: 0 auto
+        .img
+            margin: 0 auto
+            img
+                width: 90%
+        .title
+            font-size: 60px 
+            line-height: 60px
+            text-align: center
+            top: 32.6%
     .blueberry-img
         img 
             margin-top: -30px   
     .contact
         .contact__form, .form__box
             margin: 0 auto
+    .gallery__wrapper 
+        .conteiner__img 
+            .img__box1
+                justify-content: center
+                margin: 0 auto
+                .img__item2
+                    justify-content: center
+                .img__item3
+                    margin: 0 auto
+        .smal__img, .smal__img2
+            width: 570px
+            height: 400px
+             
+            img
+                width: 100%
+    .gallery__wrapper 
+        .conteiner__img
+            .img__item
+                width: 570px
+                height: 400px
+                img 
+                    width: 100%
+            .img__item2 
+                .smal__img, .smal__img2
+                    margin-left: 0 
+            .img__item, .smal__img, .smal__img2
+                margin-bottom: 20px
+            .img__box1
+                .img__item3, .img__item4
+                    margin-bottom: 20px
+    .subscribe__conteiner 
+        .title__box
+            margin-left: 20px
+    .blog-conteiner 
+        .img-conteiner
+            justify-content: center
+            .img-item
+                margin: 30px 30px 0 0   
 
+        
 @media screen and ( max-width: 991px )
     .cahee-freshlife, html, body
         max-width: 100%    
     .header__topper
         max-width: 960px    
         flex-flow: row wrap
-        
+    .subscribe__wrapper 
+        .title__box 
+            input[type="button"] 
+                right: 0   
     .cahee-freshlife .bottom
         height: 746px
         padding: 0
-        
         img 
             max-width: 400px    
-    .cahee-freshlife .bottom .bottom__topic
-        font-size: 78px 
+    .cahee-freshlife 
+        .bottom 
+            &__topic
+                font-size: 78px 
     .our-services
         div.img
             max-width: 400px
-              
         .img img
             margin-left: 80px   
-           
         .list 
             width: 320px
             margin-left: 5%
-            
         &__wrpper
             .list 
                 max-width: 300px
                 margin: 0 auto
         .title__img 
-            h1.title
+            width: 450px    
+            h1.title                
                 font-size: 76px 
                 line-height: 60px
                 text-align: center
                 margin-left: 40px
                 margin-top: 20px
-    .form__box
-            margin-left: 65px
-            
-            .btn
-                input                                       
-                    width: 120px
-                    height: 50px
-                    background: #00c4c4
-                    color: #ffffff
-    .gallery
-        .img__box1
-            .img__item3, .img__item4
-                margin: 0 auto        
+                justify-content: center
 
-        
+                              
+
+                
+             
 
 
     

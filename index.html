@@ -13,52 +13,61 @@
 
 <body>
     <section id="Home" class="cahee-freshlife">
-
-        <header class="header">
-            <div class="header__topper">
-                <h2 class="header__title">Cahee</h2>
-                <nav class="nav-menu">
-                    <a href="#Home" class="nav__link">Home</a>
-                    <a href="#About" class="nav__link">About</a>
-                    <a href="#Our Services" class="nav__link">Services</a>
-                    <a href="#Gallery" class="nav__link">Gallery</a>
-                    <a href="#Blog" class="nav__link">Blog</a>
-                    <a href="#Contact" class="nav__link">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="conteiner__middle">
-            <div class="topic">
-                <h1 class="topic__title">Fresh Life</h1>
-                <p class="topic__text">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco.
-                </p>
-                <input class="topic__btn" type="button" value="GET FREE NOW" />
-            </div>
+        <div class="cahee-freshlife___wrapper">
+                <header class="header">
+                        <div class="header__topper">
+                            <h2 class="header__title">Cahee</h2>
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                <span id="span1"></span>
+                                <span id="span2"></span>
+                                <span id="span3"></span>
+                            </div>
+                            <nav class="nav-menu">
+                                <a href="#Home" class="nav__link">Home</a>
+                                <a href="#About" class="nav__link">About</a>
+                                <a href="#Our Services" class="nav__link">Services</a>
+                                <a href="#Gallery" class="nav__link">Gallery</a>
+                                <a href="#Blog" class="nav__link">Blog</a>
+                                <a href="#Contact" class="nav__link">Contact</a>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="conteiner__middle">
+                        <div class="topic">
+                            <h1 class="topic__title">Fresh Life</h1>
+                            <p class="topic__text">
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco.
+                            </p>
+                            <input class="topic__btn" type="button" value="GET FREE NOW" />
+                        </div>
+                    </div>
+                    <div class="scroll"><a class="bottom__link" href="#About"><img class="scroll-mouse" src="img/scroll.png"
+                                alt="scroll" /></a></div>
         </div>
-        <div class="scroll"><a class="bottom__link" href="#About"><img class="scroll-mouse" src="img/scroll.png"
-                    alt="scroll" /></a></div>
         <div id="About" class="bottom">
-            <div class="bottom__left">
-                <img class="bottom__img" src="img/berry-cup.png" alt="berry-cup" />
+            <div class="bottom__wrapper">
+                    <div class="bottom__left">
+                            <img class="bottom__img" src="img/berry-cup.png" alt="berry-cup" />
+                        </div>
+                        <div class="bottom__right">
+                            <h1 class="bottom__topic">About Us</h1>
+                            <p class="topic__text">
+                                Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum. <br>
+                                <br> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore.
+                            </p>
+                        </div>
+                    </div>
             </div>
-            <div class="bottom__right">
-                <h1 class="bottom__topic">About Us</h1>
-                <p class="topic__text">
-                    Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum. <br>
-                    <br> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore.
-                </p>
-            </div>
-        </div>
     </section>
     <section id="Our Services" class="our-services">
         <div class="our-services__wrapper">
-            <div class="our-servises__conteiner">
+            <div class="our-services__conteiner">
                     <div class="list">
                             <ul class="list__box">
                                 <li class="list__item">
@@ -79,10 +88,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="img"><img src="img/tomato.png" alt="tomatos" class="tomatos">
-                            <div class="title__img">
-                                <h1 class="title">Our Services</h1>
-                            </div>
+                        <div class="img">
+                            <img src="img/tomato.png" alt="tomatos" class="tomatos">
+                            <h1 class="title">Our Services</h1>
                         </div>
             </div>           
         </div>
@@ -116,72 +124,75 @@
     </section>
     <section class="subscribe">
         <div class="subscribe__wrapper">
-            <div class="title__box">
-                <h1 class="title">Subscribe To Us</h1>
-                <p class="title__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <form action="#">
-                    <input class="form" type="email" name="email" placeholder="Your email address..." id=""><input
-                        type="button" value="SUBSCRIBE">
-                </form>
-            </div>
-            <div class="blueberry-img"><img src="img/bg-blueberry.png" alt="blueberry"></div>
+                <div class="subscribe__conteiner">
+                        <div class="title__box">
+                            <h1 class="title">Subscribe To Us</h1>
+                            <p class="title__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <form action="#">
+                                <input class="form" type="email" name="email" placeholder="Your email address..." id=""><input
+                                    type="button" value="SUBSCRIBE">
+                            </form>
+                        </div>
+                    </div>
         </div>
     </section>
     <section id="Blog" class="blog-conteiner">
-        <div class="conteiner-item1">
-            <h1 class="title">Blog</h1>
-            <p class="title-text">
-                Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-            </p>
-        </div>
-        <div class="img-conteiner">
-            <div class="img-item">
-                <img src="img/kivi-mohito.png" alt="kivi-mohito" width="370px" height="310px" />
-                <div class="img-date">
-                    <a href="#">
-                        <h1 class="date"><span>20</span><br>NOV</h1>
-                    </a>
-                </div>
-                <div class="text">
-                    <p>
-                        <a href="#">Green Smoothies: Too Much of a Good Thing?</a><br>
-                        <a href="#"><span class="smal-text">By Auskteez - 2 hour</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="img-item">
-                <img src="img/beens.png" alt="Beens" width="370px" height="310px" />
-                <div class="img-date">
-                    <a href="#">
-                        <h1 class="date"><span>14</span><br>NOV</h1>
-                    </a>
-                </div>
-                <div class="text">
-                    <p>
-                        <a href="#">Growing Food and a “Thirst” for Innovation</a><br>
-                        <a href="#"><span class="smal-text">By Auskteez - 3 hour</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="img-item">
-                <img src="img/berrys.png" alt="berrys" width="370px" height="310px" />
-                <div class="img-date">
-                    <a href="#">
-                        <h1 class="date"><span>10</span><br>NOV</h1>
-                    </a>
-                </div>
-                <div class="text">
-                    <p>
-                        <a href="#">Pesticides & Food: What You Need to Know</a><br> <a href="#"><span
-                                class="smal-text">By Auskteez - 6 hours</span></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="button">
-            <input type="button" value="VIEW MORE"></input>
+        <div class="blog-conteiner__wrapper">
+                <div class="conteiner-item1">
+                        <h1 class="title">Blog</h1>
+                        <p class="title-text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                        </p>
+                    </div>
+                    <div class="img-conteiner">
+                        <div class="img-item">
+                            <img src="img/kivi-mohito.png" alt="kivi-mohito" width="370px" height="310px" />
+                            <div class="img-date">
+                                <a href="#">
+                                    <h1 class="date"><span>20</span><br>NOV</h1>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <a href="#">Green Smoothies: Too Much of a Good Thing?</a><br>
+                                    <a href="#"><span class="smal-text">By Auskteez - 2 hour</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <img src="img/beens.png" alt="Beens" width="370px" height="310px" />
+                            <div class="img-date">
+                                <a href="#">
+                                    <h1 class="date"><span>14</span><br>NOV</h1>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <a href="#">Growing Food and a “Thirst” for Innovation</a><br>
+                                    <a href="#"><span class="smal-text">By Auskteez - 3 hour</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <img src="img/berrys.png" alt="berrys" width="370px" height="310px" />
+                            <div class="img-date">
+                                <a href="#">
+                                    <h1 class="date"><span>10</span><br>NOV</h1>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <a href="#">Pesticides & Food: What You Need to Know</a><br> <a href="#"><span
+                                            class="smal-text">By Auskteez - 6 hours</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="VIEW MORE"></input>
+                    </div>
         </div>
     </section>
     <section id="Contact" class="contact">
@@ -222,18 +233,20 @@
                     </p>
                 </div>
             </section>
-            <footer class="bottom__end">
-                <div class="copiright">
-                    <p class="text">© 2015 Company. All right reserved.</p>
-                </div>
-                <div class="main-logo">
-                    <p class="logo"><a href="#Home">Cahee</a></p>
-                </div>
-                <div class="author">
-                    <p class="text">Made with <span class="red-text">love</span> by Auskteez</p>
-                </div>
-            </footer>
         </div>
+                <footer class="bottom__end">
+                        <div class="footer-wrapper">
+                                <div class="copiright">
+                                    <p class="text">© 2015 Company. All right reserved.</p>
+                                </div>
+                                <div class="main-logo">
+                                    <p class="logo"><a href="#Home">Cahee</a></p>
+                                </div>
+                                <div class="author">
+                                    <p class="text">Made with <span class="red-text">love</span> by Auskteez</p>
+                                </div>                        
+                        </div>
+                </footer>
     </section>
 </body>
 

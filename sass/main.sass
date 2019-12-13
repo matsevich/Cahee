@@ -23,29 +23,36 @@
 @mixin pacifico-cursive 
     font-family: 'Pacifico', cursive
     font-weight: 400
+@mixin wrapper
+    max-width: 1170px
+    margin: 0 auto
 //* Fresh Life style *//
 
 
-.cahee-freshlife
-    width: 100%     
-    display: flex
-    flex-flow: column wrap
-    justify-content: flex-start
-    background: url(../img/main-bg.png) no-repeat
+.cahee-freshlife  
+    background-image: url(../img/main-bg.png)
+    background-repeat: no-repeat
+    background-size: auto
+    height: 180vh
+    &___wrapper
+        display: flex
+        flex-flow: column wrap
+        justify-content: flex-start
+        max-width: 1170px
+        margin: 0 auto
     .header         
         width: 100%        
         display: flex
         background-color: #fff
         opacity: 0.7
         &__topper
-            margin-top: 45px
-            width: inherit  
+            margin: 45px auto 0
             position: fixed
             display: flex
-            justify-content: space-between
             align-items: baseline
             align-self: center
-            z-index: 99
+            z-index: 999
+            max-width: 1140px
             .header__title 
                 @include pacifico-cursive            
                 font-size: 50px
@@ -54,11 +61,8 @@
             .nav-menu 
                 @include relawey-bold                
                 font-size: 16px
-                margin:
-                    right: auto
-                    left: 26% 
-                text-decoration: none
-                color: #000
+                color: #000 
+                margin: 0 0 0 260px 
                 a 
                     text-decoration: none
                     position: relative
@@ -142,19 +146,20 @@
                     border-radius: 17px
     .bottom 
         background: url(../img/blue-bg.png) 
-        background-size: 100%       
-        display: flex
-        flex-flow: row wrap
-        justify-content: space-around
-        align-items: center
-        padding:
-            top: 60px
-            bottom: 60px
+        background-size: cover            
+        &__wrapper
+            @include wrapper
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-around
+            align-items: center
+            margin-bottom: 60px
+            margin-top: 60px    
         .bottom__img 
             width: 555px
         .bottom__right 
             color: #fff
-            @include relewey-light    
+            @include relewey-light  
             .topic__text 
                 width: 500px     
         .bottom__topic 
@@ -166,53 +171,50 @@
 
 .our-services
     background-color: #70bfff
+    background-size: cover
     &__wrapper
-        max-width: 1200px
-        min-width: 320px
-        margin: 0 auto 
-        .our-servises__conteiner
-            display: flex
-            justify-content: space-between
-            align-items: center
-            flex-flow: row wrap-reverse
-            padding:
-                top: 100px
-                bottom: 150px
+        @include wrapper
+.our-services__conteiner
+    display: flex
+    justify-content: center
+    align-items: flex-start 
+    flex-wrap: wrap-reverse
+    padding-top: 100px
+    padding-bottom: 150px
+            
 
     .img
         position: relative
         display: flex
-        margin: 0 auto
+        margin-left: 120px 
         justify-content: center
-        align-items: cent
-        img
-            margin-left: 50px
-        .title__img
+        align-items: center
+        width: 550px
+   
+        .title
+            display: block
+            @include relawey-bold
+            font-size: 90px
+            line-height: 100px
+            color: #ffffff
             position: absolute
-            left: 3%
-            top: 30.21%
-            width: 550px    
-            
-            .title
-                @include relawey-bold
-                font-size: 90px
-                line-height: 100px
-                color: #ffffff
+            margin: 0
+            left: 0
+            top: 41.4%
+            max-width: 550px    
+            text-align: center
 .list
+    display: flex
     justify-content: center
     flex-direction: column
     align-items: center
-    width: 400px
-    height: 460px
-    margin-left: auto
-    margin-bottom: 150px
-    margin-top: 180px
+    margin: 0
     .list__box
         list-style: none
         width: 400px
     &__item
         background: #fff
-        margin-bottom: 20px
+        margin-top: 20px
         display: flex
         justify-content: space-between
         align-items: center
@@ -250,22 +252,19 @@
             img
                 padding-top: 25px
                 padding-left: 25px
-
+/* Gallery styling */
 .gallery
     background-color: #ffe92f
     &__wrapper
-        max-width: 1200px
-        min-width: 320px
-        margin: 0 auto  
+        @include wrapper
         .gallery__conteiner
             display: flex
             justify-content: center
             flex-flow: row wrap
-            
             align-items: flex-start
 
         .topper__box
-            width: 590px
+            max-width: 590px
             margin: 0 auto
             text-align: center
             .title
@@ -282,16 +281,14 @@
             justify-content: space-between
             flex-direction: row
             flex-wrap: wrap
-            width: 1170px
+            
             margin: 0 auto
             .img__item
-                flex-basis: 51%
                 margin: 0 auto            
             .img__item2
                 display: flex
                 justify-content: space-between
                 flex-flow: column wrap
-                flex-basis: 24.5%
                 margin: 0 auto
                 .smal__img, .smal__img2
                     margin-left: 30px
@@ -330,21 +327,25 @@
                     transform: scale(0.99)
                 &:hover
                     box-shadow: 2px 2px 4px 6px  #9e901d
-
+/* Subscribe styling */
 .subscribe
     background-color: #ffffff
+    background-image: url(../img/bg-blueberry.png)
+    background-position: center
+    background-size: cover
     &__wrapper
+        @include wrapper
+    &__conteiner
         display: flex
-        justify-content: center
+        justify-content: flex-start
         flex-direction: row
         flex-wrap: wrap
-        width: 100%
         .title__box
             position: relative
             width: 575px
             height: 220px
             float: left
-            margin-top: 110px
+            margin: 120px 0 170px 0
             .title
                 @include relawey-bold
                 font-size: 40px
@@ -356,7 +357,7 @@
                 width: 545px
                 padding-bottom: 30px
             .form
-                width: 570px
+                width: 100%
                 height: 55px
             input[type="email"]
                 border: 1px solid #000000
@@ -393,6 +394,8 @@
 .blog-conteiner 
     background-image: url(../img/bg.png)
     background-size: cover
+    &__wrapper
+        @include wrapper
     a
         &:link, &:visited
             text-decoration: none
@@ -439,15 +442,15 @@
         position: relative
         display: flex
         flex-flow: row wrap
-        justify-content: center
+        justify-content: space-between
         padding: 0 0 50px
         box-sizing: border-box
         align-items: center
+        
         .img-item 
             position: relative
             width: 370px
             height: 310px
-            margin: 15px
             background: #b07cf7
             box-shadow: 3px 3px 3px rgba(83, 81, 81, 0.3), -2px -2px 3px rgba(83, 81, 81, 0.3)
             img 
@@ -490,6 +493,10 @@
 //* Last page, Contact, styling *//
 .contact
     background: url(../img/contact-bg.png) no-repeat
+    background-position: center
+    background-size: cover
+    &__wrapper
+        @include wrapper
     a, a:link
         color: #b9b9b9
         text-decoration: none
@@ -517,7 +524,6 @@
         flex-flow: row wrap
         align-items: flex-start
         .form__box
-            margin-left: 165px
             position: relative
             .btn
                 input 
@@ -576,15 +582,17 @@
         line-height: 25px
         margin: 0 0 13px 0
     .bottom__end
-        display: flex
-        justify-content: space-around
-        flex-direction: row
         width: 100%
         height: 90px
         background-color: #262626
         color: #b9b9b9
         vertical-align: middle
-        @include relewey-light        
+        @include relewey-light
+        .footer-wrapper
+            @include wrapper   
+            display: flex
+            justify-content: space-around
+            flex-direction: row    
         .main-logo
             .logo
                 @include pacifico-cursive                
@@ -620,3 +628,4 @@
             box-shadow: inset 5px 0 0 0 #355b82 
 
 @import media.sass
+@import _toggl.sass
