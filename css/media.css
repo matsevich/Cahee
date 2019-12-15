@@ -85,4 +85,199 @@
       text-align: center;
       margin-left: 40px;
       margin-top: 20px;
-      justify-content: center; } }
+      justify-content: center; }
+  .our-services__conteiner .img .title {
+    top: 21%;
+    text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000; }
+  .contact__form .form__wrapper {
+    margin-left: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .cahee-freshlife .conteiner__middle .topic__title {
+    margin-top: 80px; }
+  .cahee-freshlife .conteiner__middle .topic {
+    margin-bottom: 80px; }
+  .cahee-freshlife .header__topper .nav-menu {
+    margin-left: 15px;
+    font-size: 13px; }
+  .cahee-freshlife .bottom__topic {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .gallery__wrapper .button {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .subscribe__conteiner .title__box input[type="button"] {
+    position: static; }
+  .blog-conteiner .button {
+    padding-bottom: 30px; }
+  .contact .txtplace {
+    margin-bottom: 20px; }
+  .contact .header {
+    padding-top: 20px; }
+  .contact__form .form__box .btn input {
+    bottom: -50px; } }
+
+@media screen and (max-width: 590px) {
+  .cahee-freshlife .conteiner__middle .topic {
+    margin: 80px auto 85px auto; }
+  .cahee-freshlife .bottom__left {
+    width: 380px; }
+    .cahee-freshlife .bottom__left__img img {
+      width: 100%; }
+  .cahee-freshlife .bottom img {
+    max-width: 380px; }
+  .cahee-freshlife .conteiner__middle .topic__text {
+    width: 340px; }
+  .cahee-freshlife .bottom .bottom__topic {
+    font-size: 48px;
+    text-align: center; }
+  .cahee-freshlife .bottom .bottom__right .topic__text {
+    width: 340px; }
+  .our-services__conteiner .img {
+    width: 340px; }
+  .our-services .img img {
+    margin: 0 auto; }
+  .our-services__conteiner .img .title {
+    font-size: 52px;
+    top: 30%; }
+  .our-services__conteiner {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .list .list__box {
+    width: 340px; }
+  .list__item .icon img {
+    padding-left: 17px; }
+  .gallery__wrapper .topper__box .title {
+    margin-top: 30px; }
+  .gallery__wrapper .conteiner__img .img__item {
+    width: 340px;
+    height: 100%; }
+  .gallery__wrapper .smal__img, .gallery__wrapper .smal__img2 {
+    width: 340px;
+    height: 240px; }
+  .gallery__wrapper .conteiner__img .img__box1 .img__item3 {
+    width: 340px; }
+  .gallery__wrapper .conteiner__img img {
+    width: 340px; }
+  .subscribe__conteiner .title__box .title {
+    font-size: 32px; }
+  .subscribe__conteiner .title__box {
+    margin-top: 30px;
+    margin-bottom: 120px; }
+  .subscribe__conteiner .title__box .title__text {
+    width: 340px; }
+  .subscribe__conteiner .title__box .form {
+    width: 80%; }
+  .blog-conteiner .conteiner-item1 {
+    padding-top: 30px; }
+  .blog-conteiner .conteiner-item1 .title-text {
+    width: 340px;
+    margin-bottom: 20px; }
+  .blog-conteiner .img-conteiner .img-item {
+    margin: 10px auto; }
+  .contact .header__topic {
+    font-size: 64px; }
+  .contact .header__text {
+    width: 340px; }
+  .contact .form__inputs .form__item input {
+    width: 340px;
+    margin: 10px auto; }
+  .contact__form .form__wrapper, .contact .txtplace {
+    margin: 0 auto;
+    width: 340px; }
+  .contact__data {
+    padding-left: 175px; }
+  .contact__text {
+    font-size: 16px;
+    margin-bottom: 8px; }
+  .contact .bottom__end .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+  .contact .bottom__end {
+    height: 100%; }
+  .contact .bottom__end .copiright .text, .contact .bottom__end .main-logo .logo, .contact .bottom__end .author .text {
+    margin-top: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .cahee-freshlife .bottom__left {
+    width: 300px; }
+    .cahee-freshlife .bottom__left__img img {
+      width: 100%; }
+  .cahee-freshlife .bottom img {
+    max-width: 300px; }
+  .cahee-freshlife .conteiner__middle .topic__text {
+    width: 280px; }
+  .cahee-freshlife .bottom .bottom__topic {
+    font-size: 48px;
+    text-align: center; }
+  .cahee-freshlife .bottom .bottom__right .topic__text {
+    width: 280px; }
+  .our-services__conteiner .img {
+    width: 300px; }
+  .our-services__conteiner .img .title {
+    font-size: 52px;
+    top: 11%; }
+  .list .list__box {
+    width: 300px; }
+  .list__item .icon img {
+    padding-left: 10px;
+    padding-top: 10px; }
+  .list__item .icon, .list__item .text {
+    height: 70px; }
+  .list__item .text .list-text {
+    padding-top: 18px; }
+  .gallery__wrapper .conteiner__img .img__item {
+    width: 300px;
+    height: 100%; }
+  .gallery__wrapper .smal__img, .gallery__wrapper .smal__img2 {
+    width: 300px;
+    height: 240px; }
+  .gallery__wrapper .conteiner__img .img__box1 .img__item3 {
+    width: 300px; }
+  .gallery__wrapper .conteiner__img img {
+    width: 300px; }
+  .subscribe__conteiner .title__box .title {
+    font-size: 32px; }
+  .blog-conteiner .img-conteiner .img-item {
+    width: 300px;
+    height: 270px; }
+  .blog-conteiner .img-conteiner .img-item .text {
+    width: 280px; }
+  .contact__text {
+    line-height: 18px; }
+  .our-services .list {
+    margin: 0 auto; }
+  .cahee-freshlife .header__topper .header__title {
+    margin: 0 auto 0 20px; }
+  .blog-conteiner .img-conteiner .img-item img {
+    width: 100%;
+    height: 100%; }
+  .subscribe__conteiner .title__box .title__text {
+    width: 300px; }
+  .subscribe__conteiner .title__box .form {
+    width: 80%; }
+  .blog-conteiner .conteiner-item1 .title-text {
+    width: 300px; }
+  .contact .header__topic {
+    font-size: 64px; }
+  .contact .header__text {
+    width: 300px; }
+  .contact .form__inputs .form__item input {
+    width: 300px;
+    margin: 10px auto; }
+  .contact__form .form__wrapper, .contact .txtplace {
+    margin: 0 auto;
+    width: 300px; }
+  .cahee-freshlife .header__topper #menuToggle {
+    display: flex; }
+  .cahee-freshlife .header__topper .menu-block {
+    display: flex;
+    position: absolute;
+    right: -70px;
+    top: -6px; }
+  .cahee-freshlife .header__topper .nav-menu {
+    display: none; }
+  .cahee-freshlife .header__topper #menuToggle:checked ~ .nav-menu {
+    display: flex; } }

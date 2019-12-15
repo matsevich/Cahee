@@ -18,7 +18,6 @@
   background-image: url(../img/main-bg.png);
   background-repeat: no-repeat;
   background-size: auto;
-  height: 180vh;
 }
 
 .cahee-freshlife___wrapper {
@@ -173,7 +172,6 @@
 
 .cahee-freshlife .bottom {
   background: url(../img/blue-bg.png);
-  background-size: cover;
 }
 
 .cahee-freshlife .bottom__wrapper {
@@ -183,8 +181,8 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .cahee-freshlife .bottom .bottom__img {
@@ -210,7 +208,6 @@
 
 .our-services {
   background-color: #70bfff;
-  background-size: cover;
 }
 
 .our-services__wrapper {
@@ -981,6 +978,65 @@
     margin-left: 40px;
     margin-top: 20px;
     justify-content: center;
+  }
+  .our-services__conteiner .img .title {
+    top: 21%;
+    text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000;
+  }
+  .contact__form .form__wrapper {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cahee-freshlife .conteiner__middle .topic__title {
+    margin-top: 80px;
+  }
+  .cahee-freshlife .conteiner__middle .topic {
+    margin-bottom: 80px;
+  }
+  .cahee-freshlife .header__topper .nav-menu {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+  .cahee-freshlife .bottom__topic {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .gallery__wrapper .button {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .subscribe__conteiner .title__box input[type="button"] {
+    position: static;
+  }
+  .blog-conteiner .button {
+    padding-bottom: 30px;
+  }
+  .contact .txtplace {
+    margin-bottom: 20px;
+  }
+  .contact .header {
+    padding-top: 20px;
+  }
+  .contact__form .form__box .btn input {
+    bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .cahee-freshlife .conteiner__middle .topic {
+    margin: 80px auto 85px auto;
+  }
+  .cahee-freshlife .bottom__left {
+    width: 380px;
+  }
+  .cahee-freshlife .bottom__left__img img {
+    width: 100%;
+  }
+  .cahee-freshlife .bottom__img {
+    max-width: 380px;
   }
 }
 

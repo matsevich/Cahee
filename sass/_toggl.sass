@@ -3,14 +3,13 @@
   position: absolute
   width: 60px
   height: 60px
-  display: none
+  display: none 
   flex-direction: column
   justify-content: center
   align-items: center
-  right: 0
+  right: -50px
   top: 0
-  border: 2px solid #000000
-  margin: 0 auto
+  margin: 10px auto
   
 
 #menuToggle input 
@@ -20,16 +19,16 @@
   position: absolute
   cursor: pointer
   opacity: 0 /* hide input */
-  z-index: 1 /* top of the menu */
+  z-index: 999 /* top of the menu */
   right: 0
   top: 0
 
 
 #menuToggle span
-  width: 55px
-  height: 8px
+  width: 45px
+  height: 6px
   margin-bottom: 10px
-  background: #7f8fa6
+  background: #4B4A4B
   border-radius: 4px
   -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71)
   -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71)
@@ -46,14 +45,14 @@
 
 
 #menuToggle input:checked ~ #span1 
-  background-color: #0c2461
+  background-color: #4B4A4B
   transform: rotate(45deg) translate(8px)
 
 #menuToggle input:checked ~ #span2 
-  background-color: #0c2461
+  background-color: #4B4A4B
   transform: rotate(495deg) translate(4px)
 
 #menuToggle input:checked ~ #span3 
-  background-color: #0c2461
+  background-color: #4B4A4B
   transform: rotate(45deg)
   opacity: 0
