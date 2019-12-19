@@ -15,4 +15,3 @@ gulp.task('watch', function(){
     gulp.watch('sass/**/*.sass', gulp.parallel('sass'))
     gulp.watch('**/*.html', gulp.parallel('html'))
 });
-

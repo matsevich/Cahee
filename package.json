@@ -2,13 +2,7 @@
   "name": "services-galery",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/matsevich/Cahee/issues"
   },
-  "homepage": "https://github.com/matsevich/Cahee#readme"
+  "homepage": "https://github.com/matsevich/Cahee#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
 }
