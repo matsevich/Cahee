@@ -821,7 +821,7 @@
     right: -70px;
     top: -6px; }
   .cahee-freshlife .header__topper .nav-menu {
-    display: flex;
+    display: none;
     position: absolute;
     justify-content: center;
     flex-flow: column wrap;
@@ -830,20 +830,14 @@
     top: 75px;
     right: -50px;
     text-align: center;
-    max-height: 0;
-    font-size: 0; }
-  .cahee-freshlife .conteiner__middle .topic__title:hover ~ .topic__text {
-    max-height: 200px;
-    font-size: 14px;
-    background: #994545; }
-  /* .cahee-freshlife .header__topper .menu-block #menuToggle
-        &:hover ~ .nav-menu
-            max-height: 300px
-            font-size: 14px */
-  #menuToggle input:checked #navigate {
-    max-height: 400px;
-    font-size: 14px;
-    background-color: #afaaaa; } }
+    z-index: 50;
+    text-shadow: 1px 1px 3px #ffffff, -1px -1px 3px #ffffff;
+    border-radius: 20px;
+    background: #c4c0c088; }
+  .cahee-freshlife .header__topper .nav-menu .nav__link {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999; } }
 
 @media screen and (max-width: 400px) {
   .cahee-freshlife .bottom__left {
